@@ -9,16 +9,14 @@ const generateClassName = createGenerateClassName({
 });
 
 export default () => {
-    console.log("Shubham.kumatr");
     return (
         <div>
-            <StylesProvider generateClassName={generateClassName}>
-                <BrowserRouter>
+            <BrowserRouter>
+                <StylesProvider generateClassName={generateClassName}>
                     <Header />
                     <MarketingApp />
-                </BrowserRouter>
-            </StylesProvider>
-
+                </StylesProvider>
+            </BrowserRouter>
         </div >
 
     )
