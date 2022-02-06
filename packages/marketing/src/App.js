@@ -9,6 +9,7 @@ const generateClassName = createGenerateClassName({
 });
 
 export default () => {
+    console.log(process.env.NODE_ENV);
     return (
         <div>
             <BrowserRouter>
